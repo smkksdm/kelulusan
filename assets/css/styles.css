@@ -1,0 +1,128 @@
+/* styles.css */
+
+/* Gunakan Nunito Sans sebagai font utama */
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+/* Header (site-header) dengan nuansa Duolingo (hijau cerah) */
+
+.site-header {
+  background-color: #58cc02;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+/* Footer (site-footer) */
+
+.site-footer {
+  background-color: #f1f1f1;
+  color: #555;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Tombol dua menu (index & login) */
+
+.menu-duo {
+  margin-top: 60px;
+}
+
+.menu-btn {
+  border-radius: 50px;
+  font-weight: 700;
+  padding: 12px 24px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.active-button {
+  background-color: #58cc02;
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 0 #4db002;
+}
+
+.inactive-button {
+  background-color: #fff;
+  color: #00aaff;
+  border: 2px solid #00aaff;
+  box-shadow: none;
+}
+
+/* Sidebar statis untuk desktop */
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 220px;
+    bottom: 0;
+    background-color: #f9f9f9;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-left: 240px;
+    padding: 20px;
+  }
+}
+
+/* Card styling default (untuk mobile = card view) */
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+/* Override di layar besar (≥ 992px) agar immersive (tanpa border/bayangan) */
+
+@media (min-width: 992px) {
+  .card {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+/* Tombol Bootstrap dengan sudut membulat */
+
+.btn {
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+/* Offcanvas (mobile) */
+
+.offcanvas-header, .offcanvas-body {
+  background-color: #ffffff;
+}
+
+/* Sidebar menu styling */
+
+.sidebar .nav-link, .offcanvas .nav-link {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.nav-link:hover {
+  color: #58cc02;
+}
+
