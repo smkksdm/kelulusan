@@ -12,25 +12,25 @@
 </head>
 
 <body>
-    <nav class="bg-light navbar navbar-expand-lg navbar-light p-3"><a class="navbar-brand" href="#">Portal Kelulusan</a><button class="navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <nav class="bg-light navbar navbar-expand-lg p-3"><a class="navbar-brand" href="home.html" title="Kembali ke Beranda">Portal Kelulusan</a><button class="navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#navMenu" title="Buka menu"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="nav align-items-center ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                <li class="nav-item"><a class="nav-link" href="cekstatus.html">Cek Status</a></li>
-                <li class="nav-item"><a class="nav-link active" href="pengumuman.html">Pengumuman</a></li>
+                <li class="nav-item"><a class="nav-link" href="home.html" title="Beranda">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="cekstatus.html" title="Cek Status">Cek Status</a></li>
+                <li class="nav-item"><a class="nav-link active" href="pengumuman.html" title="Lihat Pengumuman">Pengumuman</a></li>
                 <li class="nav-item ps-3">
-                    <div class="form-check form-switch"><input type="checkbox" class="form-check-input" id="darkSwitch"></div>
+                    <div class="form-check form-switch" title="Dark/Light Mode"><input type="checkbox" class="form-check-input" id="darkSwitch"></div>
                 </li>
             </ul>
         </div>
     </nav>
     <main class="container py-4" id="content"></main>
     <footer class="text-center bg-light footer py-3">
-        <div><i class="bi bi-tiktok me-3" style="font-size:1.5rem;"></i><i class="bi bi-instagram me-3" style="font-size:1.5rem;"></i><i class="bi bi-whatsapp" style="font-size:1.5rem;"></i></div><small>© 2025 Tim IT SMKK SDM Sumedang</small>
+        <div><i class="bi bi-tiktok me-3" title="Buka TikTok"></i><i class="bi bi-instagram me-3" title="Buka Instagram"></i><i class="bi bi-whatsapp" title="Chat WhatsApp"></i></div><small>© 2025 Tim IT SMKK SDM Sumedang</small>
     </footer>
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="footerMenu">
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="footerMenu" aria-labelledby="footerMenuLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Media Sosial</h5><button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+            <h5 class="offcanvas-title" id="footerMenuLabel">Media Sosial</h5><button class="btn-close" type="button" data-bs-dismiss="offcanvas" title="Tutup"></button>
         </div>
         <div class="offcanvas-body d-flex justify-content-around"><a class="text-center" href="https://www.tiktok.com/@smkksdm" target="_blank"><i class="bi bi-tiktok" style="font-size:2rem;"></i>
                 <p>TikTok</p>

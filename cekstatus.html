@@ -12,35 +12,34 @@
 </head>
 
 <body>
-    <nav class="bg-light navbar navbar-expand-lg navbar-light p-3"><a class="navbar-brand" href="#">Portal Kelulusan</a><button class="navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <nav class="bg-light navbar navbar-expand-lg p-3"><a class="navbar-brand" href="home.html" title="Kembali ke Beranda">Portal Kelulusan</a><button class="navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#navMenu" title="Buka menu"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="nav align-items-center ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                <li class="nav-item"><a class="nav-link active" href="cekstatus.html">Cek Status</a></li>
-                <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+                <li class="nav-item"><a class="nav-link" href="home.html" title="Beranda">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link active" href="cekstatus.html" title="Halaman Cek Status">Cek Status</a></li>
+                <li class="nav-item"><a class="nav-link" href="pengumuman.html" title="Lihat Pengumuman">Pengumuman</a></li>
                 <li class="nav-item ps-3">
-                    <div class="form-check form-switch"><input type="checkbox" class="form-check-input" id="darkSwitch"></div>
+                    <div class="form-check form-switch" title="Dark/Light Mode"><input type="checkbox" class="form-check-input" id="darkSwitch"></div>
                 </li>
             </ul>
         </div>
     </nav>
     <main class="container py-4">
         <div class="card mx-auto p-4" style="max-width:24rem;">
-            <div class="text-center mb-3"><i class="bi bi-person-circle" style="font-size:3rem;"></i></div>
-            <h3 class="text-center card-title mb-2">Cek Status Kelulusan</h3>
-            <p class="text-center text-muted">Masukan ID Siswa &amp; Tanggal Lahir dengan benar!</p>
-            <form id="form-cekstatus" class="mt-3">
-                <div class="mb-3"><label class="form-label" for="id_siswa">ID Siswa</label><input class="form-control form-control" type="text" id="id_siswa" required=""></div>
-                <div class="mb-3"><label class="form-label" for="tgl_lahir">Tanggal Lahir</label><input class="form-control form-control" type="text" id="tgl_lahir" required=""></div><button class="btn btn-primary w-100" type="submit">Cek Status</button>
+            <h3 class="text-center card-title mb-3">Cek Status Kelulusan</h3>
+            <p class="text-center text-muted mb-4"> Masukkan <strong>ID Siswa</strong> &amp; <strong>Tanggal Lahir</strong> (YYYY-MM-DD) </p>
+            <form id="form-cekstatus">
+                <div class="mb-3"><label class="form-label" for="id_siswa">ID Siswa</label><input class="form-control form-control" type="text" id="id_siswa" placeholder="e.g. S001" required=""></div>
+                <div class="mb-3"><label class="form-label" for="tgl_lahir">Tanggal Lahir</label><input class="form-control form-control" type="date" id="tgl_lahir" required=""></div><button class="btn btn-primary w-100" type="submit">🔍 Cek Status</button>
             </form>
         </div>
     </main>
     <footer class="text-center bg-light footer py-3">
-        <div><i class="bi bi-tiktok me-3" style="font-size:1.5rem;"></i><i class="bi bi-instagram me-3" style="font-size:1.5rem;"></i><i class="bi bi-whatsapp" style="font-size:1.5rem;"></i></div><small>© 2025 Tim IT SMKK SDM Sumedang</small>
+        <div><i class="bi bi-tiktok me-3" title="Buka TikTok"></i><i class="bi bi-instagram me-3" title="Buka Instagram"></i><i class="bi bi-whatsapp" title="Chat WhatsApp"></i></div><small>© 2025 Tim IT SMKK SDM Sumedang</small>
     </footer>
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="footerMenu">
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="footerMenu" aria-labelledby="footerMenuLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Media Sosial</h5><button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+            <h5 class="offcanvas-title" id="footerMenuLabel">Media Sosial</h5><button class="btn-close" type="button" data-bs-dismiss="offcanvas" title="Tutup"></button>
         </div>
         <div class="offcanvas-body d-flex justify-content-around"><a class="text-center" href="https://www.tiktok.com/@smkksdm" target="_blank"><i class="bi bi-tiktok" style="font-size:2rem;"></i>
                 <p>TikTok</p>

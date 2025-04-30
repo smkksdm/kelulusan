@@ -2,20 +2,19 @@
 
 let studentData = [];
 
-// 1. Load & parse CSV
+// 1. Load & parse CSV (header harus: tgl_lahir;id_siswa;nama_siswa;jurusan;status)
 fetch('data siswa.csv')
   .then(res => res.text())
   .then(csvText => {
     const lines = csvText.trim().split('\n');
-    // misal header: nipd;id_siswa;nama_siswa;jurusan;status
     const header = lines.shift().split(';').map(h => h.trim());
     studentData = lines.map(line => {
-      const cols = line.split(';').map(c => c.trim());
+      const vals = line.split(';').map(v => v.trim());
       const obj = {};
-      header.forEach((h, i) => obj[h] = cols[i]);
+      header.forEach((h,i) => obj[h] = vals[i]);
       return {
         id_siswa:   obj['id_siswa'],
-        tgl_lahir:       obj['tgl_lahir'],
+        tgl_lahir:  obj['tgl_lahir'],                        // ganti nipd → tgl_lahir
         nama_siswa: obj['nama_siswa'],
         jurusan:    obj['jurusan'],
         lulus:      obj['status'].toLowerCase() === 'lulus'
@@ -25,9 +24,8 @@ fetch('data siswa.csv')
   })
   .catch(err => console.error('Gagal load CSV:', err));
 
-// 2. Setelah data siap, inisiasi seluruh logic
 function initApp() {
-  // ===== Dark Mode Init & Toggle =====
+  // Dark mode
   const darkSwitch = document.getElementById('darkSwitch');
   if (darkSwitch) {
     if (localStorage.getItem('darkMode') === 'on') {
@@ -35,57 +33,54 @@ function initApp() {
       darkSwitch.checked = true;
     }
     darkSwitch.addEventListener('change', () => {
-      if (darkSwitch.checked) {
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('darkMode','on');
-      } else {
-        document.body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode','off');
-      }
+      document.body.classList.toggle('dark-mode', darkSwitch.checked);
+      localStorage.setItem('darkMode', darkSwitch.checked ? 'on' : 'off');
     });
   }
 
-  // ===== Form Cek Status =====
+  // Form cekstatus
   const form = document.getElementById('form-cekstatus');
   if (form) {
     form.addEventListener('submit', e => {
       e.preventDefault();
-      const id   = document.getElementById('id_siswa').value.trim();
-      const tgl_lahir = document.getElementById('tgl_lahir').value.trim();
-      const rec  = studentData.find(s => s.id_siswa === id && s.tgl_lahir === tgl_lahir);
-      if (!rec) return alert('Data tidak ditemukan, cek lagi ya!');
+      const id  = document.getElementById('id_siswa').value.trim();
+      const tgl = document.getElementById('tgl_lahir').value.trim();
+      const rec = studentData.find(s => s.id_siswa === id && s.tgl_lahir === tgl);
+      if (!rec) {
+        return alert('⚠️ Data tidak ditemukan. Pastikan ID & Tanggal Lahir benar (YYYY-MM-DD).');
+      }
       sessionStorage.setItem('selectedStudent', JSON.stringify(rec));
       window.location.href = 'pengumuman.html';
     });
   }
 
-  // ===== Load Pengumuman =====
-  const container = document.getElementById('content');
-  if (container) {
+  // Load pengumuman
+  const cont = document.getElementById('content');
+  if (cont) {
     const data = sessionStorage.getItem('selectedStudent');
     if (!data) {
-      container.innerHTML = `
-        <div class="alert alert-warning mt-4 fade-in">
-          Harap Masukan ID Siswa dan Tanggal Lahir terlebih dahulu...
+      cont.innerHTML = `
+        <div class="alert alert-warning mt-4">
+          ⚠️ Harap Masukan <strong>ID Siswa</strong> dan <strong>Tanggal Lahir</strong> terlebih dahulu!
         </div>`;
     } else {
       const s = JSON.parse(data);
-      container.innerHTML = `
-        <div class="card text-center mt-4 p-3 fade-in">
-          <div class="mb-3"><i class="bi bi-person-circle" style="font-size:3rem;"></i></div>
+      cont.innerHTML = `
+        <div class="card text-center mt-4 p-3">
+          <h5 class="mb-3">Hasil Cek Kelulusan</h5>
+          <p><strong>ID Siswa:</strong> ${s.id_siswa}</p>
+          <p><strong>Tgl. Lahir:</strong> ${s.tgl_lahir}</p>
           <p><strong>Nama:</strong> ${s.nama_siswa}</p>
-          <p><strong>Tanggal Lahir:</strong> ${s.tgl_lahir}</p>
           <p><strong>Jurusan:</strong> ${s.jurusan}</p>
-          <p>Anda dinyatakan: <strong>${s.lulus ? 'LULUS 🎉' : 'TIDAK LULUS 😢'}</strong></p>
-          <p>Untuk pengambilan Surat Kelulusan bisa diambil di Kampus 1 SMK Kesehatan SDM Sumedang Pada</p>		  
+          <p class="mt-3">Anda dinyatakan: <strong>${s.lulus ? 'LULUS 🎉' : 'TIDAK LULUS 😢'}</strong></p>
           <button class="btn btn-secondary mt-3" onclick="sessionStorage.removeItem('selectedStudent');window.location='cekstatus.html'">
-            Coba Lagi
+            🔄 Coba Lagi
           </button>
         </div>`;
     }
   }
 
-  // ===== Footer Offcanvas Menu =====
+  // Footer offcanvas
   const offEl = document.getElementById('footerMenu');
   if (offEl) {
     const off = new bootstrap.Offcanvas(offEl);
@@ -98,5 +93,3 @@ function initApp() {
     });
   }
 }
-
-// NOTE: Pastikan file CSV-nya bernama tepat "data siswa.csv" dan ter‐host di root folder portal-mu.
