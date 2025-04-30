@@ -15,7 +15,7 @@ fetch('data siswa.csv')
       header.forEach((h, i) => obj[h] = cols[i]);
       return {
         id_siswa:   obj['id_siswa'],
-        nipd:       obj['nipd'],
+        tgl_lahir:       obj['tgl_lahir'],
         nama_siswa: obj['nama_siswa'],
         jurusan:    obj['jurusan'],
         lulus:      obj['status'].toLowerCase() === 'lulus'
@@ -51,8 +51,8 @@ function initApp() {
     form.addEventListener('submit', e => {
       e.preventDefault();
       const id   = document.getElementById('id_siswa').value.trim();
-      const nipd = document.getElementById('nipd').value.trim();
-      const rec  = studentData.find(s => s.id_siswa === id && s.nipd === nipd);
+      const tgl_lahir = document.getElementById('tgl_lahir').value.trim();
+      const rec  = studentData.find(s => s.id_siswa === id && s.tgl_lahir === tgl_lahir);
       if (!rec) return alert('Data tidak ditemukan, cek lagi ya!');
       sessionStorage.setItem('selectedStudent', JSON.stringify(rec));
       window.location.href = 'pengumuman.html';
@@ -66,17 +66,18 @@ function initApp() {
     if (!data) {
       container.innerHTML = `
         <div class="alert alert-warning mt-4 fade-in">
-          Harap Masukan ID Siswa dan NIPD terlebih dahulu...
+          Harap Masukan ID Siswa dan Tanggal Lahir terlebih dahulu...
         </div>`;
     } else {
       const s = JSON.parse(data);
       container.innerHTML = `
         <div class="card text-center mt-4 p-3 fade-in">
           <div class="mb-3"><i class="bi bi-person-circle" style="font-size:3rem;"></i></div>
-          <p><strong>NIPD:</strong> ${s.nipd}</p>
           <p><strong>Nama:</strong> ${s.nama_siswa}</p>
+          <p><strong>Tanggal Lahir:</strong> ${s.tgl_lahir}</p>
           <p><strong>Jurusan:</strong> ${s.jurusan}</p>
           <p>Anda dinyatakan: <strong>${s.lulus ? 'LULUS 🎉' : 'TIDAK LULUS 😢'}</strong></p>
+          <p>Untuk pengambilan Surat Kelulusan bisa diambil di Kampus 1 SMK Kesehatan SDM Sumedang Pada</p>		  
           <button class="btn btn-secondary mt-3" onclick="sessionStorage.removeItem('selectedStudent');window.location='cekstatus.html'">
             Coba Lagi
           </button>
