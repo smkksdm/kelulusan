@@ -1,0 +1,151 @@
+/* style.css */
+
+/* --- Fluent-like theme & Adaptive Dark/Light Mode --- */
+:root {
+  /* Light mode defaults */
+  --bg-color: #f3f4f6;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --navbar-bg: #ffffff;
+  --footer-bg: #ffffff;
+  --offcanvas-bg: #ffffff;
+  --border-radius: 12px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --transition-speed: 0.3s;
+  --table-striped-bg: #f9f9f9;
+}
+
+body.dark-mode {
+  /* Dark mode overrides */
+  --bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --card-bg: #2a2a2a;
+  --navbar-bg: #2a2a2a;
+  --footer-bg: #2a2a2a;
+  --offcanvas-bg: #2a2a2a;
+  --table-striped-bg: #2a2a2a;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  color: var(--text-color) !important;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--text-color) !important;
+}
+
+/* Toggler button */
+.navbar .navbar-toggler {
+  border-color: var(--text-color) !important;
+  background-color: transparent !important;
+}
+.navbar .navbar-toggler-icon {
+  filter: none;
+  transition: filter var(--transition-speed);
+}
+body.dark-mode .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-bg) !important;
+  color: var(--text-color) !important;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Override bg-light supaya footer adaptif */
+.footer.bg-light {
+  background-color: var(--footer-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Footer icons */
+.footer i {
+  color: var(--text-color) !important;
+  transition: color var(--transition-speed);
+}
+
+/* Offcanvas */
+.offcanvas {
+  background-color: var(--offcanvas-bg);
+  color: var(--text-color);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+.offcanvas-body a {
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
+}
+.offcanvas-body a p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Cards & Tables */
+.card, .table-responsive {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+.table {
+  width: 100%;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+.table th, .table td {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: rgba(0,0,0,0.1);
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--table-striped-bg);
+}
+
+/* Forms & Buttons */
+.form-control, .btn, .form-check-input {
+  border-radius: var(--border-radius);
+  transition:
+    transform var(--transition-speed),
+    background-color var(--transition-speed),
+    color var(--transition-speed),
+    border-color var(--transition-speed);
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+body, .navbar, .footer, .card, .offcanvas {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.navbar, .footer {
+  animation: slideDown 0.6s ease-out;
+}
