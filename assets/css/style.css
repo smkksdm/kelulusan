@@ -1,0 +1,41 @@
+/* style.css */
+
+/* Dark mode toggle */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar, body.dark-mode .footer {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark-mode .form-control {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+/* Offcanvas footer full-width bottom */
+
+.offcanvas-bottom {
+  height: 30%;
+}
+
+.offcanvas-body a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.offcanvas-body a p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
