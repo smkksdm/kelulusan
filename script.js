@@ -16,8 +16,8 @@
 // ========================================
 const CONFIG = {
     DATA_FILE: 'data.json',
-    MIN_NIPD_LENGTH: 9,
-    MAX_NIPD_LENGTH: 9,
+    MIN_NIPD_LENGTH: 16,
+    MAX_NIPD_LENGTH: 16,
     LOADING_DELAY: 1500 // ms
 };
 
