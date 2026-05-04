@@ -1,2 +1,0 @@
-# kelulusan
-Portal Web Kelulusan

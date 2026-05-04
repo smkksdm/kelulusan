@@ -1,0 +1,434 @@
+[
+    {
+        "nipd": "232410695",
+        "nama": "Ade Nayla Zahrotu Shita",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "81,31",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410696",
+        "nama": "Alicya Suci Cahyaningsih",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "76,94",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410697",
+        "nama": "Annya Syahniarti",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "78,84",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410698",
+        "nama": "Bhidara",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "79,41",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410699",
+        "nama": "Dina Cahaya Ramadan",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "78,54",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410700",
+        "nama": "Dina Damayanti",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "86,53",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232410701",
+        "nama": "Eliza Nurul Aulia",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "79,62",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410702",
+        "nama": "Fadla Siti Sahara",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "84,17",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232410703",
+        "nama": "Jilan Rasya Fitriani",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "78,96",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410704",
+        "nama": "Keira Putri Affendy",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "79,75",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410705",
+        "nama": "Keysha Putri Indriani",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "77,71",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410707",
+        "nama": "Melda Azhara Suciani",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "79,62",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410706",
+        "nama": "Muhammad Rizky Ikhsan Fadillah",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "78,28",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410708",
+        "nama": "Mulani Asyadika Pitriyani",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "78,47",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410709",
+        "nama": "Nadya Rahma Agustin",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "78,95",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410710",
+        "nama": "Naila Ayu Nurzahra",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "84,74",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232410711",
+        "nama": "Natasya Aurella Apriliani",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "81,72",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410712",
+        "nama": "Rachel Amanda Putri",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "80,82",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410713",
+        "nama": "Resva Palhi Ramdiani",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "79,57",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410714",
+        "nama": "Riri Haerani",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "78,66",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410716",
+        "nama": "Sabrina Haqqoni",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "78,63",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410717",
+        "nama": "Setiawan Rizky",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "79,48",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410718",
+        "nama": "Suci Halfi Hasanah",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "79,03",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410719",
+        "nama": "Syifa Yuliya Azahra",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "80,40",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410720",
+        "nama": "Tasya Syabila",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "77,92",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410721",
+        "nama": "Tyara Nur Auliya Rahma",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "84,84",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232410722",
+        "nama": "Valinna Amelya Eko Putri",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "79,87",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232410746",
+        "nama": "Yesa Lutvia",
+        "kelas": "XII Kep",
+        "jurusan": "Asisten Keperawatan",
+        "status": "LULUS",
+        "nilai_rata": "80,76",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232420723",
+        "nama": "Devi Anti Amanda Putri",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "85,60",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232420724",
+        "nama": "Febri Sekar Ayu Herdianti",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "81,71",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232420725",
+        "nama": "Fitri Febriyanti",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "83,06",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232420726",
+        "nama": "Fuja Nur Oktaviani Dwiraja",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "81,29",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232420728",
+        "nama": "Kayla Kenya Kafka Nafiska Arifin",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "80,59",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232420729",
+        "nama": "Neng Maylaffayza Dwi Guzarot",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "84,91",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232420730",
+        "nama": "Neng Sely",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "83,68",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232420731",
+        "nama": "Nurul Isya",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "79,33",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232420732",
+        "nama": "Riska Nanda Rosita",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "81,14",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232420733",
+        "nama": "Sabrina Mutmainah",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "81,04",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232420734",
+        "nama": "Sinta Sari Maulani",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "79,75",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232420735",
+        "nama": "Wendy Agisty",
+        "kelas": "XII FTC",
+        "jurusan": "Farmasi Klinis dan Komunitas",
+        "status": "LULUS",
+        "nilai_rata": "85,77",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232430736",
+        "nama": "Dea Cantika Angwar",
+        "kelas": "XII FTC",
+        "jurusan": "Teknologi Laboratorium Medik",
+        "status": "LULUS",
+        "nilai_rata": "86,17",
+        "keterangan": "Dengan Predikat Sangat Memuaskan"
+    },
+    {
+        "nipd": "232430737",
+        "nama": "Rexy Febiansyah",
+        "kelas": "XII FTC",
+        "jurusan": "Teknologi Laboratorium Medik",
+        "status": "LULUS",
+        "nilai_rata": "80,28",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232430715",
+        "nama": "Rizal Sukmana",
+        "kelas": "XII FTC",
+        "jurusan": "Teknologi Laboratorium Medik",
+        "status": "LULUS",
+        "nilai_rata": "76,17",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232430738",
+        "nama": "Sofia Nurbila Pasha",
+        "kelas": "XII FTC",
+        "jurusan": "Teknologi Laboratorium Medik",
+        "status": "LULUS",
+        "nilai_rata": "80,11",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232440739",
+        "nama": "Chelsea Pratiwi",
+        "kelas": "XII FTC",
+        "jurusan": "Tata Kecantikan Kulit dan Rambut",
+        "status": "LULUS",
+        "nilai_rata": "82,33",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232440745",
+        "nama": "Fina Nuraeni",
+        "kelas": "XII FTC",
+        "jurusan": "Tata Kecantikan Kulit dan Rambut",
+        "status": "LULUS",
+        "nilai_rata": "80,07",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232440741",
+        "nama": "Klara Wulan Maycellani",
+        "kelas": "XII FTC",
+        "jurusan": "Tata Kecantikan Kulit dan Rambut",
+        "status": "LULUS",
+        "nilai_rata": "78,29",
+        "keterangan": "Dengan Predikat Memuaskan"
+    },
+    {
+        "nipd": "232440743",
+        "nama": "Opik Hermawan",
+        "kelas": "XII FTC",
+        "jurusan": "Tata Kecantikan Kulit dan Rambut",
+        "status": "LULUS",
+        "nilai_rata": "74,22",
+        "keterangan": "Dengan Predikat Memuaskan"
+    }
+]
