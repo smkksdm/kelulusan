@@ -6,7 +6,7 @@
  * 
  * Features:
  * - DBLess system using JSON data file
- * - NIPD validation
+ * - NIK validation
  * - Result display with animations
  * - Error handling
  */
@@ -16,8 +16,8 @@
 // ========================================
 const CONFIG = {
     DATA_FILE: 'data.json',
-    MIN_NIPD_LENGTH: 16,
-    MAX_NIPD_LENGTH: 16,
+    MIN_NIK_LENGTH: 16,
+    MAX_NIK_LENGTH: 16,
     LOADING_DELAY: 1500 // ms
 };
 
@@ -479,7 +479,7 @@ let isLoading = false;
 // ========================================
 const elements = {
     form: null,
-    nipdInput: null,
+    nikInput: null,
     loadingIndicator: null,
     resultDisplay: null,
     errorDisplay: null,
@@ -501,7 +501,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function initializeElements() {
     elements.form = document.getElementById('graduationForm');
-    elements.nipdInput = document.getElementById('nipdInput');
+    elements.nikInput = document.getElementById('nikInput');
     elements.loadingIndicator = document.getElementById('loadingIndicator');
     elements.resultDisplay = document.getElementById('resultDisplay');
     elements.errorDisplay = document.getElementById('errorDisplay');
@@ -519,9 +519,9 @@ function initializeEventListeners() {
     }
     
     // Input validation on typing
-    if (elements.nipdInput) {
-        elements.nipdInput.addEventListener('input', handleNipdInput);
-        elements.nipdInput.addEventListener('keypress', handleNumericOnly);
+    if (elements.nikInput) {
+        elements.nikInput.addEventListener('input', handleNikInput);
+        elements.nikInput.addEventListener('keypress', handleNumericOnly);
     }
 }
 
@@ -546,7 +546,7 @@ async function loadStudentData() {
 }
 
 /**
- * Handle NIPD input - only allow numbers
+ * Handle NIK input - only allow numbers
  */
 function handleNumericOnly(event) {
     const charCode = event.which ? event.which : event.keyCode;
@@ -560,9 +560,9 @@ function handleNumericOnly(event) {
 }
 
 /**
- * Handle NIPD input formatting
+ * Handle NIK input formatting
  */
-function handleNipdInput(event) {
+function handleNikInput(event) {
     const input = event.target;
     let value = input.value;
     
@@ -570,8 +570,8 @@ function handleNipdInput(event) {
     value = value.replace(/[^0-9]/g, '');
     
     // Limit to max length
-    if (value.length > CONFIG.MAX_NIPD_LENGTH) {
-        value = value.substring(0, CONFIG.MAX_NIPD_LENGTH);
+    if (value.length > CONFIG.MAX_NIK_LENGTH) {
+        value = value.substring(0, CONFIG.MAX_NIK_LENGTH);
     }
     
     input.value = value;
@@ -587,11 +587,11 @@ function handleNipdInput(event) {
 async function handleFormSubmit(event) {
     event.preventDefault();
     
-    const nipd = elements.nipdInput.value.trim();
+    const nik = elements.nikInput.value.trim();
     
-    // Validate NIPD
-    if (!validateNipd(nipd)) {
-        showError('NIPD harus terdiri dari 9 digit angka!');
+    // Validate NIK
+    if (!validateNik(nik)) {
+        showError('NIK harus terdiri dari 16 digit angka!');
         return;
     }
     
@@ -607,7 +607,7 @@ async function handleFormSubmit(event) {
     await sleep(CONFIG.LOADING_DELAY);
     
     // Search for student
-    const student = findStudentByNipd(nipd);
+    const student = findStudentByNik(nik);
     
     // Stop loading
     stopLoading();
@@ -616,25 +616,25 @@ async function handleFormSubmit(event) {
     if (student) {
         displayResult(student);
     } else {
-        showError('Data siswa dengan NIPD ' + nipd + ' tidak ditemukan. Silahkan periksa kembali NIPD Anda atau hubungi admin.');
+        showError('Data siswa dengan NIK ' + nik + ' tidak ditemukan. Silahkan periksa kembali NIK Anda atau hubungi admin.');
     }
 }
 
 /**
- * Validate NIPD format
+ * Validate NIK format
  */
-function validateNipd(nipd) {
-    if (!nipd) return false;
-    if (nipd.length !== CONFIG.MIN_NIPD_LENGTH) return false;
-    if (!/^\d{9}$/.test(nipd)) return false;
+function validateNik(nik) {
+    if (!nik) return false;
+    if (nik.length !== CONFIG.MIN_NIK_LENGTH) return false;
+    if (!/^\d{16}$/.test(nik)) return false;
     return true;
 }
 
 /**
- * Find student by NIPD
+ * Find student by NIK
  */
-function findStudentByNipd(nipd) {
-    return studentData.find(student => student.nipd === nipd);
+function findStudentByNik(nik) {
+    return studentData.find(student => student.nipd === nik);
 }
 
 /**
@@ -650,8 +650,8 @@ function displayResult(student) {
     const html = `
         <div class="student-info">
             <div class="info-item">
-                <div class="info-label"><i class="fas fa-id-card"></i> NIPD</div>
-                <div class="info-value">${formatNipd(student.nipd)}</div>
+                <div class="info-label"><i class="fas fa-id-card"></i> NIK</div>
+                <div class="info-value">${formatNik(student.nipd)}</div>
             </div>
             <div class="info-item">
                 <div class="info-label"><i class="fas fa-user"></i> Nama Siswa</div>
@@ -739,7 +739,7 @@ function startLoading() {
     isLoading = true;
     elements.loadingIndicator.classList.remove('d-none');
     elements.form.querySelector('button[type="submit"]').disabled = true;
-    elements.nipdInput.disabled = true;
+    elements.nikInput.disabled = true;
 }
 
 /**
@@ -749,18 +749,18 @@ function stopLoading() {
     isLoading = false;
     elements.loadingIndicator.classList.add('d-none');
     elements.form.querySelector('button[type="submit"]').disabled = false;
-    elements.nipdInput.disabled = false;
-    elements.nipdInput.focus();
+    elements.nikInput.disabled = false;
+    elements.nikInput.focus();
 }
 
 /**
  * Reset search form
  */
 function resetSearch() {
-    elements.nipdInput.value = '';
+    elements.nikInput.value = '';
     hideResults();
     hideError();
-    elements.nipdInput.focus();
+    elements.nikInput.focus();
 }
 
 /**
@@ -771,12 +771,12 @@ function printResult() {
 }
 
 /**
- * Format NIPD with dashes (optional)
+ * Format NIK with dashes (optional)
  */
-function formatNipd(nipd) {
+function formatNik(nik) {
     // You can customize the format here
-    // Example: 242-510-001
-    return nipd;
+    // Example: 3211-2359-0408-0001
+    return nik;
 }
 
 /**

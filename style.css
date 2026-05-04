@@ -312,7 +312,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.nipd-example {
+.nik-example {
     font-family: 'Orbitron', sans-serif;
     color: var(--cyber-accent);
     font-size: 1.3rem;
@@ -859,7 +859,7 @@ body {
         font-size: 1rem;
     }
     
-    .nipd-example {
+    .nik-example {
         font-size: 1.1rem;
     }
 }
