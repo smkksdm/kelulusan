@@ -26,7 +26,7 @@ const CONFIG = {
 // ========================================
 const SAMPLE_DATA = [
     {
-        "nipd": "3211235904080001",
+        "nik": "3211235904080001",
         "nama": "Ade Nayla Zahrotu Shita",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -35,7 +35,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211225604060001",
+        "nik": "3211225604060001",
         "nama": "Alicya Suci Cahyaningsih",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -44,7 +44,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211174411070001",
+        "nik": "3211174411070001",
         "nama": "Annya Syahniarti",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -53,7 +53,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211234807070002",
+        "nik": "3211234807070002",
         "nama": "Bhidara",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -62,7 +62,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211176709080002",
+        "nik": "3211176709080002",
         "nama": "Dina Cahaya Ramadan",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -71,7 +71,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211186901070001",
+        "nik": "3211186901070001",
         "nama": "Dina Damayanti",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -80,7 +80,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211186611070001",
+        "nik": "3211186611070001",
         "nama": "Eliza Nurul Aulia",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -89,7 +89,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3173065509070002",
+        "nik": "3173065509070002",
         "nama": "Fadla Siti Sahara",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -98,7 +98,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211224210070004",
+        "nik": "3211224210070004",
         "nama": "Jilan Rasya Fitriani",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -107,7 +107,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "2171104606070003",
+        "nik": "2171104606070003",
         "nama": "Keira Putri Affendy",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -116,7 +116,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211085705080002",
+        "nik": "3211085705080002",
         "nama": "Keysha Putri Indriani",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -125,7 +125,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211104105080001",
+        "nik": "3211104105080001",
         "nama": "Melda Azhara Suciani",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -134,7 +134,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211080807070001",
+        "nik": "3211080807070001",
         "nama": "Muhammad Rizky Ikhsan Fadillah",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -143,7 +143,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211054901090001",
+        "nik": "3211054901090001",
         "nama": "Mulani Asyadika Pitriyani",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -152,7 +152,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211226008070004",
+        "nik": "3211226008070004",
         "nama": "Nadya Rahma Agustin",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -161,7 +161,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211174808080003",
+        "nik": "3211174808080003",
         "nama": "Naila Ayu Nurzahra",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -170,7 +170,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211174604080004",
+        "nik": "3211174604080004",
         "nama": "Natasya Aurella Apriliani",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -179,7 +179,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211174602080005",
+        "nik": "3211174602080005",
         "nama": "Rachel Amanda Putri",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -188,7 +188,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211214709070002",
+        "nik": "3211214709070002",
         "nama": "Resva Palhi Ramdiani",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -197,7 +197,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211054809080002",
+        "nik": "3211054809080002",
         "nama": "Riri Haerani",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -206,7 +206,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3277017012070004",
+        "nik": "3277017012070004",
         "nama": "Sabrina Haqqoni",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -215,7 +215,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211220702080003",
+        "nik": "3211220702080003",
         "nama": "Setiawan Rizky",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -224,7 +224,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211074710070001",
+        "nik": "3211074710070001",
         "nama": "Suci Halfi Hasanah",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -233,7 +233,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211236107070002",
+        "nik": "3211236107070002",
         "nama": "Syifa Yuliya Azahra",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -242,7 +242,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211186909080001",
+        "nik": "3211186909080001",
         "nama": "Tasya Syabila",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -251,7 +251,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211175506080003",
+        "nik": "3211175506080003",
         "nama": "Tyara Nur Auliya Rahma",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -260,7 +260,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3672037006080001",
+        "nik": "3672037006080001",
         "nama": "Valina Amellya Eko Putri",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -269,7 +269,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211084512070002",
+        "nik": "3211084512070002",
         "nama": "Yesa Lutvia",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -278,7 +278,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211226412070004",
+        "nik": "3211226412070004",
         "nama": "Devi Anti Amanda Putri",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -287,7 +287,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211084302080001",
+        "nik": "3211084302080001",
         "nama": "Febri Sekar Ayu Herdianti",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -296,7 +296,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211076102060001",
+        "nik": "3211076102060001",
         "nama": "Fitri Febriyanti",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -305,7 +305,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211226910070003",
+        "nik": "3211226910070003",
         "nama": "Fuja Nur Oktaviani Dwiraja",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -314,7 +314,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211084403090001",
+        "nik": "3211084403090001",
         "nama": "Kayla Kenya Kafka Nafiska Arifin",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -323,7 +323,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211234705070001",
+        "nik": "3211234705070001",
         "nama": "Neng Maylaffayza Dwi Guzarot",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -332,7 +332,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211225808080001",
+        "nik": "3211225808080001",
         "nama": "Neng Sely",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -341,7 +341,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211076802080001",
+        "nik": "3211076802080001",
         "nama": "Nurul Isya",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -350,7 +350,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211104511070001",
+        "nik": "3211104511070001",
         "nama": "Riska Nanda Rosita",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -359,7 +359,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211225201080001",
+        "nik": "3211225201080001",
         "nama": "Sabrina Mutmainah",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -368,7 +368,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211055702080002",
+        "nik": "3211055702080002",
         "nama": "Sinta Sari Maulani",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -377,7 +377,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211084908070002",
+        "nik": "3211084908070002",
         "nama": "Wendy Agisty",
         "kelas": "XII FTC",
         "jurusan": "Farmasi Klinis dan Komunitas",
@@ -386,7 +386,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211186610080002",
+        "nik": "3211186610080002",
         "nama": "Dea Cantika Angwar",
         "kelas": "XII FTC",
         "jurusan": "Teknologi Laboratorium Medik",
@@ -395,7 +395,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Sangat Memuaskan"
     },
     {
-        "nipd": "3211170202080002",
+        "nik": "3211170202080002",
         "nama": "Rexy Febiansyah",
         "kelas": "XII FTC",
         "jurusan": "Teknologi Laboratorium Medik",
@@ -404,7 +404,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211221201080001",
+        "nik": "3211221201080001",
         "nama": "Rizal Sukmana",
         "kelas": "XII FTC",
         "jurusan": "Teknologi Laboratorium Medik",
@@ -413,7 +413,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211176309070003",
+        "nik": "3211176309070003",
         "nama": "Sofia Nurbila Pasha",
         "kelas": "XII FTC",
         "jurusan": "Teknologi Laboratorium Medik",
@@ -422,7 +422,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211225501080001",
+        "nik": "3211225501080001",
         "nama": "Chelsea Pratiwi",
         "kelas": "XII FTC",
         "jurusan": "Tata Kecantikan Kulit dan Rambut",
@@ -431,7 +431,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211235007080003",
+        "nik": "3211235007080003",
         "nama": "Fina Nuraeni",
         "kelas": "XII FTC",
         "jurusan": "Tata Kecantikan Kulit dan Rambut",
@@ -440,7 +440,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211225205070002",
+        "nik": "3211225205070002",
         "nama": "Klara Wulan Maycellani",
         "kelas": "XII FTC",
         "jurusan": "Tata Kecantikan Kulit dan Rambut",
@@ -449,7 +449,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3211230702080001",
+        "nik": "3211230702080001",
         "nama": "Opik Hermawan",
         "kelas": "XII FTC",
         "jurusan": "Tata Kecantikan Kulit dan Rambut",
@@ -458,7 +458,7 @@ const SAMPLE_DATA = [
         "keterangan": "Dengan Predikat Memuaskan"
     },
     {
-        "nipd": "3216106702080006",
+        "nik": "3216106702080006",
         "nama": "Zilha Melbilqis",
         "kelas": "XII Kep",
         "jurusan": "Asisten Keperawatan",
@@ -634,7 +634,7 @@ function validateNik(nik) {
  * Find student by NIK
  */
 function findStudentByNik(nik) {
-    return studentData.find(student => student.nipd === nik);
+    return studentData.find(student => student.nik === nik);
 }
 
 /**
@@ -651,7 +651,7 @@ function displayResult(student) {
         <div class="student-info">
             <div class="info-item">
                 <div class="info-label"><i class="fas fa-id-card"></i> NIK</div>
-                <div class="info-value">${formatNik(student.nipd)}</div>
+                <div class="info-value">${formatNik(student.nik)}</div>
             </div>
             <div class="info-item">
                 <div class="info-label"><i class="fas fa-user"></i> Nama Siswa</div>
