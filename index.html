@@ -95,7 +95,7 @@
                                 <p class="instruction-text fs-5">
                                     <i class="fas fa-keyboard"></i> 
                                     <strong>Silahkan Masukan NIK</strong> dengan format: 
-                                    <span class="nipd-example badge bg-warning text-dark">3211xxxxxxxxxxxx</span>
+                                    <span class="nik-example badge bg-warning text-dark">3211xxxxxxxxxxxxxx</span>
                                 </p>
                                 <p class="hint-text text-info">
                                     <i class="fas fa-lightbulb"></i> 
@@ -115,7 +115,7 @@
                         <div class="card-body cyber-card-body">
                             <form id="graduationForm" class="cyber-form needs-validation" novalidate>
                                 <div class="mb-4">
-                                    <label for="nipdInput" class="form-label cyber-label fw-bold">
+                                    <label for="nikInput" class="form-label cyber-label fw-bold">
                                         <i class="fas fa-id-card"></i> Nomor Induk Kependudukan (NIK)
                                     </label>
                                     <div class="input-group cyber-input-group input-group-lg">
@@ -125,16 +125,16 @@
                                         <input 
                                             type="text" 
                                             class="form-control cyber-input" 
-                                            id="nipdInput" 
-                                            placeholder="Masukkan NIK (contoh: 3211xxxxxxxxxxxx)"
+                                            id="nikInput" 
+                                            placeholder="Masukkan NIK (contoh: 3211xxxxxxxxxxxxxx)"
                                             maxlength="16"
-                                            pattern="[0-9]{9}"
+                                            pattern="[0-9]{16}"
                                             aria-label="NIK Input"
-                                            aria-describedby="nipdHelp"
+                                            aria-describedby="nikHelp"
                                             required
                                         >
                                     </div>
-                                    <div id="nipdHelp" class="form-text cyber-hint">
+                                    <div id="nikHelp" class="form-text cyber-hint">
                                         <i class="fas fa-exclamation-triangle"></i> 
                                         NIK harus terdiri dari 16 digit angka
                                     </div>
